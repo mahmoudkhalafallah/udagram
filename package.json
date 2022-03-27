@@ -1,0 +1,15 @@
+{
+    "scripts": {
+        "frontend:install": "cd udagram-frontend && npm install",
+        "frontend:test": "cd udagram-frontend && npm run test",
+        "frontend:build": "cd udagram-frontend && npm run build",
+        "frontend:deploy": "cd udagram-frontend && npm run deploy",
+        "backend:install": "cd udagram-api && npm install",
+        "backend:test": "cd udagram-api && npm run test",
+        "backend:build": "cd udagram-api && npm run build",
+        "backend:deploy": "cd udagram-api && npm run deploy"
+    },
+    "devDependencies": {
+        "@angular/cli": "~8.3.25"
+    }
+}
