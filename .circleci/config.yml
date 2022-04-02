@@ -15,7 +15,7 @@ jobs:
       - node/install:
           install-yarn: true
       - aws-cli/setup
-      - eb/setup
+      - aws-elastic-beanstalk/setup
       - checkout
       # install dependencies in both apps
       - run:
