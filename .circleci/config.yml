@@ -34,7 +34,7 @@ jobs:
       - run:
           name: build the UI
           command: |
-            npm run frontend:build
+            npm run frontend:build -- -- --prod
       - run:
           name: deploy the UI
           command: |

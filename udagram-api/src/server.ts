@@ -22,7 +22,10 @@ import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
 
   app.use(bodyParser.json());
 
-  app.use(cors());
+  app.use(cors({
+    origin: '*',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  }))
 
   app.use("/api/v0/", IndexRouter);
 
