@@ -7,11 +7,14 @@ orbs:
 
   # different jobs are calles later in the workflows sections
 jobs:
+  publish:   
+    filters:
+      branches:
+        only: master
   build:
     docker:
       # the base image can run most needed actions with orbs
       - image: "cimg/base:stable"
-    steps:
       - node/install:
           install-yarn: true
       - aws-cli/setup
